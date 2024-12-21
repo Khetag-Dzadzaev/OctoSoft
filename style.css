@@ -869,6 +869,7 @@ img {
 	text-align: center;
 }
 
+
 .subtitle_new {
 	max-width: 100%;
 	width: 100%;
@@ -877,6 +878,10 @@ img {
 
 .generator {
 	margin-bottom: 48px;
+}
+
+.generator_mt {
+	margin: 48px 0;
 }
 
 .generator_plan {
@@ -890,6 +895,14 @@ img {
 	gap: 20px;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.generator__item_nBg {
+	background-color: transparent;
+}
+
+.generator__item_p0 {
+	padding: 0;
 }
 
 .generator__item_plan {
@@ -918,6 +931,10 @@ img {
 	max-width: 563px;
 	margin: 24px 0 0;
 	text-align: left;
+}
+
+.generator__item-left .subtitle_bim {
+	margin: 0;
 }
 
 @media (max-width: 1024px) {
