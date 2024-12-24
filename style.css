@@ -577,7 +577,12 @@ img {
 	margin: 0 auto;
 }
 
-.title span,
+.title span {
+	color: #025195;
+	font-size: 22px;
+	font-family: "Nunito-SemiBold";
+}
+
 .block1__title span {
 	color: #025195;
 	font-size: 22px;
@@ -624,7 +629,7 @@ img {
 		margin-bottom: 64px;
 	}
 
-	.block1__title>.blue-text {
+	.block1__title>span {
 		font-size: 56px;
 	}
 
@@ -729,11 +734,9 @@ img {
 	flex: 0 0 50%;
 }
 
-
 .possibility_1c>.possibility__col {
 	flex: 0 0 100%;
 }
-
 
 .possibility__item {
 	background-color: #fff;
@@ -750,8 +753,6 @@ img {
 	max-width: 100%;
 	flex: 0 0 100%;
 }
-
-
 
 .possibility__item_new {
 	max-width: 100%;
@@ -810,7 +811,6 @@ img {
 	text-align: left;
 }
 
-
 @media (min-width: 576px) {
 	.possibility {
 		margin: 48px 0 0;
@@ -824,7 +824,6 @@ img {
 	.possibility__item_nBG {
 		flex: 0 0 50%;
 	}
-
 }
 
 @media (min-width: 992px) {
@@ -835,7 +834,6 @@ img {
 	.possibility_1c>.possibility__col {
 		flex: 0 0 50%;
 	}
-
 }
 
 @media (min-width: 400px) {
@@ -850,6 +848,11 @@ img {
 	.possibility__item-text {
 		margin: 48px 0 4px;
 		height: 84px;
+	}
+
+	.possibility__item-text_new {
+
+		height: auto;
 	}
 
 	.possibility__item-text_final {
@@ -871,7 +874,6 @@ img {
 	margin: 16px auto 36px;
 	text-align: center;
 }
-
 
 .subtitle_new {
 	max-width: 100%;
@@ -941,8 +943,6 @@ img {
 }
 
 @media (max-width: 1024px) {
-
-
 	.generator__item {
 		padding: 38px 0px 38px 30px;
 	}
@@ -959,9 +959,6 @@ img {
 }
 
 @media (max-width: 768px) {
-
-
-
 	.generator__item-right {
 		width: 230px;
 	}
@@ -1249,11 +1246,21 @@ img {
 	padding: 24px;
 }
 
+.footer-bottom__item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 33%;
+	max-width: 338px;
+}
+
 .rights {
 	color: #4b4b4b;
+	font-size: 12px;
 }
 
 .develop {
+	font-size: 14px;
 	color: #4b4b4b;
 	text-decoration: underline;
 	text-underline-offset: 3px;
@@ -1282,12 +1289,21 @@ img {
 	.footer-bottom {
 		flex-direction: column;
 	}
+
+	.footer-bottom__item {
+		align-items: center;
+		max-width: 400px;
+		width: auto;
+	}
+
+	.footer-bottom__item {
+		text-align: center;
+	}
 }
 
 .gradient1 {
 	background: linear-gradient(180deg, rgba(238, 242, 255, 0) 0%, #eef2ff 50%, rgba(238, 242, 255, 0) 100%);
 }
-
 
 .background {
 	background: #f1f4ff;
@@ -1333,6 +1349,7 @@ img {
 	align-items: center;
 	flex-direction: column-reverse;
 	gap: 32px;
+	height: 100%;
 }
 
 .product__img {
@@ -1353,7 +1370,6 @@ img {
 	.product {
 		margin-top: 64px;
 	}
-
 
 	.product__title {
 		font-weight: 700;
@@ -1399,13 +1415,13 @@ img {
 	flex: 0 0 100%;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
 	.chart__col {
 		flex: 0 0 50%;
 	}
 }
 
-@media(min-width:1200px) {
+@media (min-width: 1200px) {
 	.chart__col {
 		flex: 0 0 33.333333%;
 	}
@@ -1417,12 +1433,12 @@ img {
 	background: #fff;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	gap: 74px;
+	height: 100%;
 }
 
-
-
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.chart__row {
 		padding: 48px;
 	}
@@ -1435,13 +1451,11 @@ img {
 	font-family: "Nunito", sans-serif;
 }
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.chart__title {
 		font-weight: 700;
 		font-size: 24px;
 	}
-
-
 }
 
 .chart__dopInfo {
@@ -1455,12 +1469,11 @@ img {
 	padding: 12px 24px;
 }
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.chart__dopInfo {
 		font-weight: 400;
 		font-size: 16px;
 	}
-
 }
 
 .chart__info {
@@ -1481,12 +1494,11 @@ img {
 	font-family: "Nunito", sans-serif;
 }
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.chart__listName {
 		font-weight: 400;
 		font-size: 20px;
 	}
-
 }
 
 .chart__list {
@@ -1502,7 +1514,7 @@ img {
 	color: #010101;
 }
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.chart__item {
 		font-weight: 400;
 		font-size: 14px;
@@ -1521,7 +1533,7 @@ img {
 	width: 100%;
 }
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.chart__cen {
 		font-weight: 700;
 		font-size: 24px;
@@ -1536,7 +1548,7 @@ img {
 	font-family: "Nunito", sans-serif;
 }
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.chart__sum {
 		font-weight: 500;
 		font-size: 24px;
@@ -1551,7 +1563,7 @@ img {
 	font-family: "Nunito", sans-serif;
 }
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.chart__sum>span {
 		font-weight: 500;
 		font-size: 24px;
@@ -1573,7 +1585,7 @@ img {
 	padding: 20px 32px;
 }
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.chart__button {
 		padding: 20px 48px;
 	}
@@ -1587,7 +1599,7 @@ img {
 	gap: 20px;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
 	.chartTitle {
 		gap: 26px;
 		margin-bottom: 32px;
@@ -1605,7 +1617,7 @@ img {
 	cursor: pointer;
 }
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.discount {
 		font-size: 20px;
 	}
@@ -1624,7 +1636,7 @@ img {
 }
 
 .custom-checkbox+label::after {
-	content: '';
+	content: "";
 	display: inline-block;
 	width: 56px;
 	border-radius: 32px;
@@ -1687,8 +1699,16 @@ img {
 	margin-top: 32px;
 }
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
 	.chartDopText {
 		font-size: 16px;
 	}
+}
+
+.chart__button.modal-button {
+	margin: 0;
+}
+
+.subtitle>ul {
+	padding-left: 20px;
 }

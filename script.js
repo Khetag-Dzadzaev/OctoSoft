@@ -21,6 +21,10 @@ let close = document.querySelector(".modal__close");
 
 feedback.forEach((elem) => {
 	elem.addEventListener("click", function () {
+		let titleName = this.querySelector(".chartTitle");
+		if (titleName) {
+			modal.querySelector(".chartTitle").value = titleName.value;
+		}
 		modal.style.display = "block";
 		body.classList.add("noscroll");
 	});
